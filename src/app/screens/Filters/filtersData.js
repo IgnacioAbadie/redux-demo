@@ -1,4 +1,4 @@
 export const data = {
-  sector: ['dormitorio', 'cocina', 'baño'],
-  material: ['metal', 'madera', 'plastico']
+  sector: ['Dormitorio', 'Cocina', 'Baño'],
+  material: ['Metal', 'Madera', 'Plastico']
 };

@@ -14,7 +14,7 @@ class HomeContainer extends Component {
   componentWillReceiveProps(nextProps) {
     let filteredData;
     if (nextProps.filterParams.sector) {
-      data.filter(item => nextProps.filterParams.sector === item.sector);
+      filteredData = data.filter(item => nextProps.filterParams.sector === item.sector);
     } else {
       filteredData = data;
     }
