@@ -11,6 +11,7 @@ import * as Routes from '../constants/routes';
 
 import Login from './screens/Login';
 import Home from './screens/Home';
+import Filters from './screens/Filters';
 
 // ------------------ Initial loading screen
 class InitialLoadingScreen extends PureComponent {
@@ -53,6 +54,12 @@ export default StackNavigator({
     screen: Home,
     navigationOptions: () => ({
       title: 'Home'
+    })
+  },
+  [Routes.Filters]: {
+    screen: Filters,
+    navigationOptions: () => ({
+      title: 'Filtros'
     })
   }
 });

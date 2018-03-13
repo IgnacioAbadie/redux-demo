@@ -8,6 +8,7 @@ import { ROOT } from '../constants/platform';
 import { getCurrentRouteName } from '../utils/navUtils';
 import Navigator from '../app/screens';
 
+import filters from './filters/reducer';
 import auth from './auth/reducer';
 
 const nav = (state, action) => {
@@ -30,7 +31,8 @@ const nav = (state, action) => {
 
 const reducers = combineReducers({
   auth,
-  nav
+  nav,
+  filters
 });
 
 const middlewares = [];
